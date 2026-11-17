@@ -22,7 +22,7 @@ print("LOADED URL:", os.getenv("DATABASE_URL"))
 # This line sets up loggers basically.
 if config.config_file_name is not None:
     fileConfig(config.config_file_name)
-from app.models.base import Base
+from app.models import Base
 target_metadata = Base.metadata
 
 # add your model's MetaData object here
